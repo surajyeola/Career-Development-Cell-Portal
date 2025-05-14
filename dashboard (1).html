@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career-dev</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="https://kkwagh.edu.in/">KKWIEER</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-hand"></i>
+                        <span>Volunteering</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-handshake"></i>
+                        <span>Companies</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-briefcase"></i>
+                        <span>Internships</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-laptop"></i>
+                        <span>Hackathons</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="https://kkwagh.edu.in/engineering/committees/international-facilitation-center" class="sidebar-link">
+                        <i class="lni lni-plane"></i>
+                        <span>Study Abroad</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-consulting"></i>
+                        <span>Alumni</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="login.html" class="sidebar-link" style="color: red;">
+                        <i class="lni lni-exit"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link" style="color: red;">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <h2 style="color: #fff; padding-left: 550px; padding-top: 3px;">Career Development Cell Portal</h2>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="img/account.png" class="avatar img-fluid" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end rounded">
+                                <option class="profile-option" value="profile" onclick="window.location.href='profile.html'">Profile</option>
+                                <option class="profile-option" value="logout" onclick="window.location.href='login.html'">Logout</option>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h3 class="fw-bold fs-4 mb-3">Dashboard</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold text-primary">
+                                            Latest Updates
+                                        </h5>
+                                            <p class="mb-2 fw-bold">
+                                                MEXT scholarship for Indian Students to study in Japan
+                                            </p>
+                                            <p class="mb-2 fw-bold">
+                                                Experiences of International Internships at Dubai
+                                            </p>
+                                            <p class="mb-2 fw-bold">
+                                                T&P Registration forms are open for BE students
+                                            </p>
+                                            <p class="mb-2 fw-bold">
+                                                Upcoming CV Writing Workshop
+                                            </p>
+                                            <p class="mb-2 fw-bold">
+                                                Expert talk on Applications on Advanced Data Structure by Alumni of Computer Department
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " onclick="window.location.href='profile.html'">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Profile
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            View and edit your details
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                
+                                            </span>
+                                            <span class=" fw-bold">
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " onclick="window.location.href='volunteering.html'">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Volunteering
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            Apply, Register or View Details of Roles
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                Open
+                                            </span>
+                                            <span class=" fw-bold">
+                                                Updates: ""
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " onclick="window.location.href='companies.html'">
+                                <div class="card  border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Companies
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            View info about the companies that visit KKW
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-info me-2">
+                                                New
+                                            </span>
+                                            <span class="fw-bold">
+                                                Updates: ""
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " onclick="window.location.href='internships.html'">
+                                <div class="card  border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Internships
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            View, Apply or Register for Internships
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                Open
+                                            </span>
+                                            <span class="fw-bold">
+                                                Updates: ""
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " onclick="window.location.href='hackathons.html'">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Hackathons
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            View info and register for Hackathons
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                Open
+                                            </span>
+                                            <span class="fw-bold">
+                                                Updates: ""
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " onclick="window.location.href='https://kkwagh.edu.in/engineering/committees/international-facilitation-center'">
+                                <div class="card  border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Study Abroad
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            Get information about planning Higher Studies Abroad
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-info me-2">
+                                                New
+                                            </span>
+                                            <span class="fw-bold">
+                                                Updates: ""
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 " onclick="window.location.href='alumni.html'">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Alumni
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            Access info about Alumni and Connect with them
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-info me-2">
+                                                New
+                                            </span>
+                                            <span class="fw-bold">
+                                                Updates: ""
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-body-secondary">
+                        <div class="col-6 text-start ">
+                            <a class="text-body-secondary" href="https://kkwagh.edu.in/">
+                                <strong>KKWIEER</strong>
+                            </a>
+                        </div>
+                        <div class="col-6 text-end text-body-secondary d-none d-md-block">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a class="text-body-secondary" href="#">Contact</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-body-secondary" href="#">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

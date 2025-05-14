@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+    .image-container {
+        flex: 2;
+        top: -50px;
+        left: 50px;
+        background-image: url("/img/college.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .form-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+ 
+    .form h1 {
+        margin-bottom: 20px; 
+        text-align: center;
+        color: #083aa8;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 32px;
+    }
+    .menu-bar {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    .menu-bar button {
+        background-color: #007bff00;
+        color: #016282;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0 5px; 
+        padding: 5px 10px;
+        border-radius: 5px; 
+        border: none; 
+    }
+    .menu-bar button.active {
+        color: #ffffff; 
+        background-color: #083aa8;
+        border: 2px solid #ffffff;
+    }
+    .menu-bar button:hover {
+        background-color: #e7e7e7; 
+        color: #083aa8;
+    }
+    .form h2{
+        color:#083aa8;
+        font-size: 18px;
+    }
+    .form input[type="text"],
+    .form input[type="password"],
+    .form button[type="submit"] {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border-width:2px;
+    }
+    .form button[type="submit"] {
+        background-color: #007bff00;
+        color: #016282;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .form button[type="submit"]:hover {
+        background-color: #083aa8; 
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+    .form img{
+        align-items: center;
+    }
+    button:hover{
+        background-color: #fbfeff;
+        color:#083aa8;
+        border-color:#083aa8;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container"></div>
+        <div class="form-container">
+            
+            <form class="form" id="loginForm">
+                <img src="img/login.svg" style="padding-left: 40px;">
+                <h1>Login</h1>
+                <div class="menu-bar">
+                    <button type="button" class="menu-option active" onclick="toggleForm('student')">Student</button>
+                    <button type="button" class="menu-option" onclick="toggleForm('coordinator')">Coordinator</button>
+                    <button type="button" class="menu-option" onclick="toggleForm('recruiter')">Recruiter</button>
+                </div>
+                <div id="student" class="form-content" style="display: block;">
+                    <h2>Username:</h2>
+                    <input type="text" placeholder="Username" required>
+                    <h2>Password:</h2>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" onclick="window.location.href='dashboard.html'">Login</button>
+                </div>
+                <div id="coordinator" class="form-content" style="display: none;">
+                    <h2>Username:</h2>
+                    <input type="text" placeholder="Username" required>
+                    <h2>Password:</h2>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </div>
+                <div id="recruiter" class="form-content" style="display: none;">
+                    <h2>Username:</h2>
+                    <input type="text" placeholder="Username" required>
+                    <h2>Password:</h2>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+    function toggleForm(role) {
+        document.querySelectorAll('.form-content').forEach(function(form) {
+            form.style.display = 'none';
+        });
+        document.getElementById(role).style.display = 'block';
+        
+        document.querySelectorAll('.menu-option').forEach(function(button) {
+            button.classList.remove('active');
+        });
+        document.querySelector(`[onclick="toggleForm('${role}')"]`).classList.add('active');
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        toggleForm('student');
+    });
+</script>
+</body>
+</html>
+
+
